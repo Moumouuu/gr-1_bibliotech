@@ -1,0 +1,28 @@
+nelmio_api_doc:
+    models:
+        names:
+            - { alias: AuthorInfos, type: App\Entity\Author, groups: [author_infos] }
+            - { alias: BookInfos, type: App\Entity\Book, groups: [book_infos] }
+            - { alias: UserInfos, type: App\Entity\Bibliouser, groups: [user_info] }
+            - { alias: AuthorInfos, type: App\Entity\Author, groups: [author_infos] }
+            - { alias: Login, type: App\Entity\Bibliouser, groups: [login] }
+            - { alias: UserConnexion, type: App\Entity\Bibliouser, groups: [user_connexion] }
+            - { alias: AddRemoveFriend, type: App\Entity\Bibliouser, groups: [add_delete_friend] }
+            - { alias: AddRemoveLike, type: App\Entity\Bibliouser, groups: [add_remove_like] }
+            - { alias: LiteUserInfo, type: App\Entity\Bibliouser, groups: [lite_user_info] }
+    documentation:
+        info:
+            title: API de la bibliotech !
+            description: Decouvrez de nouvelles lectures !
+            version: 1.0.0
+        components:
+            securitySchemes:
+                Bearer:
+                    type: http
+                    scheme: bearer
+
+    areas: # to filter documented areas
+        path_patterns:
+            - ^/api(?!/doc$) # Accepts routes under /api except /api/doc
+
+    

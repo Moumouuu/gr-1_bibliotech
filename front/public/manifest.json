@@ -1,0 +1,10 @@
+{
+  "short_name": "BiblioTech",
+  "name": "Online library, you can borrow books and share them with your friends. Also have suggestions for books you want to read.",
+  "icons": [
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
